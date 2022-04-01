@@ -18,14 +18,14 @@ public class Client {
      employee.setId(1);
      employee.setName("omkar");
      employee.setDob(LocalDate.of(1999, 5, 11));
-     employee.setSalary(28000.0f);
+     employee.setSalary(25000.0f);
      employee.setAddress("Pune");
-     employee.setDesignation("Analyst");
-     employee.setShop("IT");
+     employee.setDesignation("Salesman");
+     employee.setShop("Clothing");
      service.addEmployee(employee);
      System.out.println("entry is added");
      
-     //Retrieve operation
+    //Retrieve operation
       employee = service.searchEmployee(1);
 	  System.out.print("ID:"+employee.getId());
 	  System.out.println(" Name:"+employee.getName());
