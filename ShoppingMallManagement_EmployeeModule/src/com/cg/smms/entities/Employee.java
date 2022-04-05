@@ -1,7 +1,6 @@
 package com.cg.smms.entities;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -15,7 +14,7 @@ public class Employee implements Serializable{
 	@Id
 	private int id;
 	private String name;
-	private LocalDate dob;
+	private String dob;
 	private float salary;
 	private String address;
 	private String designation;
@@ -32,10 +31,10 @@ public class Employee implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	public LocalDate getDob() {
+	public String getDob() {
 		return dob;
 	}
-	public void setDob(LocalDate dob) {
+	public void setDob(String dob) {
 		this.dob = dob;
 	}
 	public float getSalary() {

@@ -25,7 +25,7 @@ public class IEmployeeServiceImpl implements IEmployeeService {
 		dao.beginTransaction();
 		dao.updateEmployee(employee);
 		dao.commitTransaction();
-		return null;
+		return employee;
 	}
 
 	@Override
